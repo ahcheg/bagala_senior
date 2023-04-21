@@ -21,6 +21,11 @@ const MainWrapper = styled.div`
   gap: 16px;
 `
 
+export const getStaticPaths = async () => ({
+    paths: [],
+    fallback: 'blocking',
+})
+
 const mocks = [
     {
         "name": "Syllabus123.pdf",
